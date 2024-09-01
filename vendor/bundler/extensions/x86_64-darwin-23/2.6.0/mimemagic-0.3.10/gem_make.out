@@ -1,0 +1,3 @@
+current directory: /Users/ryo/Desktop/rails6/practice/vendor/bundler/gems/mimemagic-0.3.10/ext/mimemagic
+/Users/ryo/.rbenv/versions/2.6.6/bin/ruby -rrubygems /Users/ryo/Desktop/rails6/practice/vendor/bundler/gems/rake-13.2.1/exe/rake RUBYARCHDIR\=/Users/ryo/Desktop/rails6/practice/vendor/bundler/extensions/x86_64-darwin-23/2.6.0/mimemagic-0.3.10 RUBYLIBDIR\=/Users/ryo/Desktop/rails6/practice/vendor/bundler/extensions/x86_64-darwin-23/2.6.0/mimemagic-0.3.10
+mkdir -p /Users/ryo/Desktop/rails6/practice/vendor/bundler/extensions/x86_64-darwin-23/2.6.0/mimemagic-0.3.10/mimemagic

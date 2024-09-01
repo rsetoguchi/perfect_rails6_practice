@@ -1,0 +1,57 @@
+current directory: /Users/ryo/Desktop/rails6/practice/vendor/bundler/gems/strscan-3.1.0/ext/strscan
+/Users/ryo/.rbenv/versions/2.6.6/bin/ruby -I /Users/ryo/.rbenv/versions/2.6.6/lib/ruby/2.6.0 -r ./siteconf20240630-8726-10f3a0w.rb extconf.rb
+checking for onig_region_memsize() in ruby.h... yes
+checking for rb_reg_onig_match() in ruby.h... no
+creating Makefile
+
+current directory: /Users/ryo/Desktop/rails6/practice/vendor/bundler/gems/strscan-3.1.0/ext/strscan
+make "DESTDIR=" clean
+
+current directory: /Users/ryo/Desktop/rails6/practice/vendor/bundler/gems/strscan-3.1.0/ext/strscan
+make "DESTDIR="
+compiling strscan.c
+strscan.c:244:26: warning: '(' and '{' tokens introducing statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+        keyword_ids[0] = rb_intern("fixed_anchor");
+                         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ryo/.rbenv/versions/2.6.6/include/ruby-2.6.0/ruby/ruby.h:1826:23: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                      ^
+strscan.c:244:26: note: '{' token is here
+        keyword_ids[0] = rb_intern("fixed_anchor");
+                         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ryo/.rbenv/versions/2.6.6/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ryo/.rbenv/versions/2.6.6/include/ruby-2.6.0/ruby/ruby.h:1811:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    {                                                   \
+    ^
+strscan.c:244:26: warning: '}' and ')' tokens terminating statement expression appear in different macro expansion contexts [-Wcompound-token-split-by-macro]
+        keyword_ids[0] = rb_intern("fixed_anchor");
+                         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ryo/.rbenv/versions/2.6.6/include/ruby-2.6.0/ruby/ruby.h:1826:24: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ryo/.rbenv/versions/2.6.6/include/ruby-2.6.0/ruby/ruby.h:1816:5: note: expanded from macro 'RUBY_CONST_ID_CACHE'
+    }
+    ^
+strscan.c:244:26: note: ')' token is here
+        keyword_ids[0] = rb_intern("fixed_anchor");
+                         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/Users/ryo/.rbenv/versions/2.6.6/include/ruby-2.6.0/ruby/ruby.h:1826:56: note: expanded from macro 'rb_intern'
+        __extension__ (RUBY_CONST_ID_CACHE((ID), (str))) : \
+                                                       ^
+strscan.c:554:18: warning: mixing declarations and code is incompatible with standards before C99 [-Wdeclaration-after-statement]
+    OnigPosition result = match(reg, str, regs, args);
+                 ^
+strscan.c:626:22: warning: mixing declarations and code is incompatible with standards before C99 [-Wdeclaration-after-statement]
+        OnigPosition ret = rb_reg_onig_match(pattern,
+                     ^
+strscan.c:1535:25: warning: mixing declarations and code is incompatible with standards before C99 [-Wdeclaration-after-statement]
+    named_captures_data data;
+                        ^
+5 warnings generated.
+linking shared-object strscan.bundle
+
+current directory: /Users/ryo/Desktop/rails6/practice/vendor/bundler/gems/strscan-3.1.0/ext/strscan
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 strscan.bundle ./.gem.20240630-8726-q5qz9d

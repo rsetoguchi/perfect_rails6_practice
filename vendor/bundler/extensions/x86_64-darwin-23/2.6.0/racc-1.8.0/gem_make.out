@@ -1,0 +1,15 @@
+current directory: /Users/ryo/Desktop/rails6/practice/vendor/bundler/gems/racc-1.8.0/ext/racc/cparse
+/Users/ryo/.rbenv/versions/2.6.6/bin/ruby -I /Users/ryo/.rbenv/versions/2.6.6/lib/ruby/2.6.0 -r ./siteconf20240630-8726-n7sfdu.rb extconf.rb
+creating Makefile
+
+current directory: /Users/ryo/Desktop/rails6/practice/vendor/bundler/gems/racc-1.8.0/ext/racc/cparse
+make "DESTDIR=" clean
+
+current directory: /Users/ryo/Desktop/rails6/practice/vendor/bundler/gems/racc-1.8.0/ext/racc/cparse
+make "DESTDIR="
+compiling cparse.c
+linking shared-object racc/cparse.bundle
+
+current directory: /Users/ryo/Desktop/rails6/practice/vendor/bundler/gems/racc-1.8.0/ext/racc/cparse
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cparse.bundle ./.gem.20240630-8726-15e2mw1/racc
